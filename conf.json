@@ -1,0 +1,11 @@
+{
+    "name": "今天吃什么",
+    "brief": "你还在纠结今天吃什么吗？你还在为中午去哪里吃而烦恼吗？本插件可以解决今天吃什么的问题！！",
+    "version": "1.0",
+    "bbs_version": "4.0",
+    "installed": 1,
+    "enable": 1,
+    "hooks_rank": [],
+    "overwrites_rank": [],
+    "dependencies": []
+}

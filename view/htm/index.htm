@@ -1,0 +1,42 @@
+<?php include _include(APP_PATH.'view/htm/header.inc.htm');?>
+
+
+<link rel="stylesheet" href="./plugin/ak_eatwhat/view/static/global.css">
+<link rel="stylesheet" href="./plugin/ak_eatwhat/view/static/style.css">
+<script src="./plugin/ak_eatwhat/view/static/global.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.9.0/jquery.min.js"></script>
+
+
+<main id="body">
+		<div class="container">
+<div id="wrapper">
+
+	<h1 class="title"><span>今天中午吃</span><b id="what">什么</b><span>？</span></h1>
+	<input type="button" value="加载中..." id="start" disabled />
+	<p><span id="cfg" title="编辑候选菜单">{ 自定义候选菜单 }</span></p>
+	
+	<p></p>
+
+	<div id="popbox-wrapper">
+		<div id="popbox">
+			<h3>~ 菜单 ~</h3>
+			<textarea rows="7" cols="51" id="list" placeholder="在这里输入菜单，项目间以空格分隔..."><?php echo setting_get('hxcd');?></textarea><input type="button" value="确定" id="ok" class="btn btn-primary"/>
+		</div>
+	</div>
+</div>
+
+<script src="./plugin/ak_eatwhat/view/static/script.js"></script>	
+				
+		</div>
+	</main>
+
+
+<!--{hook index_end.htm}-->
+
+<?php include _include(APP_PATH.'view/htm/footer.inc.htm');?>
+
+<!--{hook index_js.htm}-->
+
+<script type="text/javascript">
+$('#nav li[fid="eatwhat"]').addClass('active');
+</script>

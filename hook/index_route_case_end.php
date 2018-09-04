@@ -1,0 +1,1 @@
+case 'eatwhat': include APP_PATH.'plugin/ak_eatwhat/eatwhat.php'; break;
